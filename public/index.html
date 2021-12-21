@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <title>Generate Uniqid IDs online in your browser or via HTTP API</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Uniqid Generator</h1>
+      <p>Generate IDs using the <a href="https://www.npmjs.com/package/uniqid">uniqid</a> package online in your browser or via an API.</p>
+
+      <h2>API</h2>
+      <h3>Get one Uniqid</h3>
+      <code>
+        GET https://uniqid.dev/api
+      </code>
+
+      <h3>Get multiple Uniqids</h3>
+      <code>
+        GET https://uniqid.dev/api?count=5
+      </code>
+
+      <h3>Uniqid with a prefix</h3>
+      <code>
+        GET https://uniqid.dev/api?prefix=user_
+      </code>
+
+      <h3>Uniqid with a suffix</h3>
+      <code>
+        GET https://uniqid.dev/api?suffix=_demo
+      </code>
+
+      <h3>Uniqid in time mode</h3>
+      <code>
+        GET https://uniqid.dev/api?mode=time
+      </code>
+
+      <h3>Uniqid in process mode</h3>
+      <code>
+        GET https://uniqid.dev/api?mode=process
+      </code>
+
+      <h3>Kitchen sink example</h3>
+      <code>
+        GET https://uniqid.dev/api?count=5&prefix=user_&suffix=_demo&mode=process
+      </code>
+
+      <h3>Output format: plain text (one per line)</h3>
+      <p>Accept header: text/plain</p>
+      <code>
+        curl -X GET "https://uniqid.dev/api?count=5" -H "Accept:text/plain"
+      </code>
+
+      <h3>Output format: CSV</h3>
+      <p>Accept header: text/csv</p>
+      <code>
+        curl -X GET "https://uniqid.dev/api?count=5" -H "Accept:text/csv"
+      </code>
+
+      <h3>Output format: JSON</h3>
+      <p>Accept header: application/json</p>
+      <code>
+        curl -X GET "https://uniqid.dev/api?count=5" -H "Accept:application/json"
+      </code>
+    </main>
+  </body>
+</html>
