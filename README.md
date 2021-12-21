@@ -4,6 +4,8 @@ Website and API for generating Uniqid IDs with ease.
 
 Uses the awesome [uniqid](https://www.npmjs.com/package/uniqid) package.
 
+Visit the website at: [uniqid.dev](https://uniqid.dev)
+
 ## Contributing
 
 PRs welcome :)
